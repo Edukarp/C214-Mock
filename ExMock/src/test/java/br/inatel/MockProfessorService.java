@@ -11,7 +11,7 @@ public class MockProfessorService implements ProfessorService {
         else if (id == 3)
             return ProfessorConst.MARCELO;
         else
-            return ProfessorConst.CHRIS;
+            throw new IndexOutOfBoundsException("ID invalido: " + id);
     }
 
 }
