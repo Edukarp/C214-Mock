@@ -22,7 +22,7 @@ jobs:
 
       - name: Run Tests
         run: mvn clean test site
-        working-directory: .\ExMock
+        working-directory: ./ExMock
 
       - name: Upload artefatos
         uses: actions/upload-artifact@v3
@@ -47,7 +47,7 @@ jobs:
 
       - name: Run Build
         run: mvn clean install
-        working-directory: .\ExMock
+        working-directory: ./ExMock
 
       - name: Upload artefatos
         uses: actions/upload-artifact@v3
