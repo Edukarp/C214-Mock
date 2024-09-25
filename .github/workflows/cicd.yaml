@@ -63,7 +63,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Run script
-        run: sh scripts/shell.sh
+        run: sh ./ExMock/scripts/shell.sh
         env:
           RECIPIENT_EMAIL: "edukarp10@gmail.com" 
 
