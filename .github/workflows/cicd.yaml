@@ -54,3 +54,17 @@ jobs:
         with:
           name: Package
           path: ExMock/target/*.jar
+
+
+jobs:
+  Send-email:
+  name: Send-email
+    runs-on: ubuntu-latest
+    env:
+      RECIPIENT_EMAIL: "edukarp10@gmail.com" 
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run script
+        run: sh scripts/shell.sh
+
